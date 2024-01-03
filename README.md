@@ -4,10 +4,14 @@
 
 1. Clone this repository.
 
-   ```git clone https://github.com/VandyDataScience/land-trust-3.git```
+   ```bash
+   git clone https://github.com/VandyDataScience/land-trust-3.git
+   ```
 
-2. Navigate to the project directory.
+3. Navigate to the project directory.
 
-   ```cd land-trust-3```
+   ```bash
+   cd land-trust-3
+   ```
 
-3. Create a folder named `data` in the project directory and copy the CONUS data for all years into the folder.
+5. Create a folder named `data` in the project directory and copy the CONUS data for all years into the folder.
