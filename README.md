@@ -1,17 +1,18 @@
 # land-trust-3
 
-## Getting started
+## Changing the raster data projected
 
-1. Clone this repository.
+In the `load-cog.js` file, change the year part of the `url_to_geotiff_file` variable to the year you want to display
 
-   ```bash
-   git clone https://github.com/VandyDataScience/land-trust-3.git
-   ```
+e.g. to display the 2021 data:
 
-3. Navigate to the project directory.
+```
+var url_to_geotiff_file =
+  "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2021_ClipAOI_reprojected_cog.tif";
+```
 
-   ```bash
-   cd land-trust-3
-   ```
+## TODOs
 
-5. Create a folder named `data` in the project directory and copy the CONUS data for all years into the folder.
+- Add layer control to allow user to select the year they want to view in a side panel
+
+- Add in prediction data
