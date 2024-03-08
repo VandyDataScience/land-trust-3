@@ -18,6 +18,30 @@ const rasters = [
     url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2019_ClipAOI_reprojected_cog.tif",
   },
   {
+    year: 2016,
+    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2016_ClipAOI_reprojected_cog.tif",
+  },
+  {
+    year: 2013,
+    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2013_ClipAOI_reprojected_cog.tif",
+  },
+  {
+    year: 2011,
+    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2011_ClipAOI_reprojected_cog.tif",
+  },
+  {
+    year: 2008,
+    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2008_ClipAOI_reprojected_cog.tif",
+  },
+  {
+    year: 2006,
+    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2006_ClipAOI_reprojected_cog.tif",
+  },
+  {
+    year: 2004,
+    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2004_ClipAOI_reprojected_cog.tif",
+  },
+  {
     year: 2001,
     url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2001_ClipAOI_reprojected_cog.tif",
   }
