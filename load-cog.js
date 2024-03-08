@@ -1,5 +1,10 @@
 // Initialize leaflet map
-const map = L.map("map").setView([0, 0], 5);
+const corner1 = [37.779, -90.636];
+const corner2 = [33.999, -80.919];
+
+const map = L.map("map")
+  .setMaxBounds(L.latLngBounds(corner1, corner2))
+  .setView([35.718, -85.435], 10);
 
 // Add OpenStreetMap basemap
 L.tileLayer("https://{s}.tile.osm.org/{z}/{x}/{y}.png", {
