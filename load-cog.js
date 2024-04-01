@@ -1,10 +1,13 @@
+const DEFAULT_YEAR = 2021;
+
 // Initialize leaflet map
 const corner1 = [37.779, -90.636];
-const corner2 = [33.999, -80.919];
+const corner2 = [33.5, -80.919];
 
 const map = L.map("map")
   .setMaxBounds(L.latLngBounds(corner1, corner2))
-  .setView([35.718, -85.435], 10);
+  .setView([35.718, -85.435])
+  .setZoom(15);
 
 // Add OpenStreetMap basemap
 L.tileLayer("https://{s}.tile.osm.org/{z}/{x}/{y}.png", {
@@ -49,23 +52,23 @@ const rasters = [
   {
     year: 2001,
     url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2001_ClipAOI_reprojected_cog.tif",
-  }
-]
+  },
+];
 
 // Create a new Layers Control
 let layerControl = L.control.layers().addTo(map);
 
 // Parse each file in the rasters array
-rasters.forEach(raster => {
+rasters.forEach((raster) => {
   parseGeoraster(raster.url).then((georaster) => {
-    const layer = new GeoRasterLayer({
+    let layer = new GeoRasterLayer({
       pixelValuesToColorFn: (values) => {
-        // transforming single value into an rgba color
+        // Transforming single value into an rgba color
         const nir = values[0];
         const palette = georaster.palette[nir];
 
         if (nir === 0) return;
-        // console.log("nir:", nir);
+
         const r = palette[0];
         const g = palette[1];
         const b = palette[2];
@@ -77,10 +80,17 @@ rasters.forEach(raster => {
       opacity: 0.5,
     });
 
+    // Store the year of the raster in the layer
+    layer.year = raster.year;
+
     // Add the layer as an overlay in the layers control
-    layerControl.addOverlay(layer, raster.year);
+    layerControl.addBaseLayer(layer, layer.year);
+
+    // Display the raster for the default year on start
+    if (layer.year === DEFAULT_YEAR) {
+      layer.addTo(map);
+    }
 
     map.fitBounds(layer.getBounds());
   });
-})
-
+});
