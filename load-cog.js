@@ -1,6 +1,6 @@
 alert("Use the top-right button to select the raster data for a certain year!");
 
-const DEFAULT_YEAR = 2021;
+const DEFAULT_YEAR = 2024;
 
 // Initialize leaflet map
 const corner1 = [37.779, -90.636];
@@ -19,6 +19,10 @@ L.tileLayer("https://{s}.tile.osm.org/{z}/{x}/{y}.png", {
 
 // Array of objects to store the year and url of each .tif file
 const rasters = [
+  {
+    year: 2024,
+    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/prediction2024_reprojected_palette_cog.tif",
+  },
   {
     year: 2021,
     url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2021_ClipAOI_reprojected_cog.tif",
