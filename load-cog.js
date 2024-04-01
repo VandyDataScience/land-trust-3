@@ -1,3 +1,5 @@
+alert("Use the top-right button to select the raster data for a certain year!");
+
 const DEFAULT_YEAR = 2021;
 
 // Initialize leaflet map
