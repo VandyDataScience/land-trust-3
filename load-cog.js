@@ -1,6 +1,6 @@
 alert("Use the top-right button to select the raster data for a certain year!");
 
-const DEFAULT_YEAR = 2024;
+const DEFAULT_YEAR = 2027;
 
 // Initialize leaflet map
 const corner1 = [37.779, -90.636];
@@ -20,6 +20,10 @@ L.tileLayer("https://{s}.tile.osm.org/{z}/{x}/{y}.png", {
 // Array of objects to store the year and url of each .tif file
 const rasters = [
   {
+    year: 2027,
+    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/prediction2027_reprojected_palette_cog.tif",
+  },
+  {
     year: 2024,
     url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/prediction2024_reprojected_palette_cog.tif",
   },
@@ -38,26 +42,6 @@ const rasters = [
   {
     year: 2013,
     url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2013_ClipAOI_reprojected_cog.tif",
-  },
-  {
-    year: 2011,
-    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2011_ClipAOI_reprojected_cog.tif",
-  },
-  {
-    year: 2008,
-    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2008_ClipAOI_reprojected_cog.tif",
-  },
-  {
-    year: 2006,
-    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2006_ClipAOI_reprojected_cog.tif",
-  },
-  {
-    year: 2004,
-    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2004_ClipAOI_reprojected_cog.tif",
-  },
-  {
-    year: 2001,
-    url: "https://vds-land-trust-data-cog.s3.us-east-2.amazonaws.com/cog/CONUS2001_ClipAOI_reprojected_cog.tif",
   },
 ];
 
