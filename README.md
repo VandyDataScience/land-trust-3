@@ -33,7 +33,7 @@ cd land-trust-3
    As mentioned in the alert, the button on top right can be used to view the land cover type in map.
    
 <img width="1400" alt="Screen Shot 2024-04-25 at 9 38 55 PM" src="https://github.com/VandyDataScience/land-trust-3/assets/100242191/2e8b7af7-ad37-4621-9c69-f242bbf2154c">
-Our current prediction only include the map for 2024 and 2027, for more prediction in the future, you can attempt with the <strong>lttn-conv-patches.keras</strong> model, which is a convolutional LSTM model trained with land type over data from 2001 to 2021.
+Our current prediction only include the map for 2024 and 2027, for more prediction in the future, you can attempt with the <strong>lttn-conv-patches.keras</strong> model in this repo, which is a convolutional LSTM model trained with land cover type data from 2001 to 2021.
 
 ## Methodology
 In the study, raster images are preprocessed using rasterio to extract relevant 64x64 pixel patches. This preprocessing includes filtering based on 2D prefix sum arrays, ensuring only dynamic and relevant patches are used, optimizing the training process.
