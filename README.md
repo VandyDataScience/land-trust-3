@@ -20,8 +20,12 @@ git clone https://github.com/VandyDataScience/land-trust-3.git
 
 2. Navigate to the project directory with the command line.
 
+
 ```bash
 cd land-trust-3
 ```
 
 3. Open `index.html` in your browser by double click.
+4. As mentioned in the alert, the button on top right can be used to view the land cover type in map.
+   
+   <img width="452" alt="Screen Shot 2024-04-25 at 9 34 23 PM" src="https://github.com/VandyDataScience/land-trust-3/assets/100242191/fb079e21-37f8-437d-ad0c-08e85ec346bd">
