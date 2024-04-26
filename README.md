@@ -44,3 +44,8 @@ The training process involves feeding sequences of these processed patches to th
 
 ![model (1)](https://github.com/VandyDataScience/land-trust-3/assets/100242191/586fe194-7026-4c6b-900b-72fabdad2650)
 
+## Result
+
+<img width="765" alt="Screen Shot 2024-04-25 at 9 51 24 PM" src="https://github.com/VandyDataScience/land-trust-3/assets/100242191/d5425624-86e5-476b-9b0b-4cf53ab6699e">
+
+
