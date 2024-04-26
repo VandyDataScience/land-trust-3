@@ -1,7 +1,7 @@
 # land-trust-3
 ## Introduction
 
-The Land Trust of Tennessee seeks to identify potential land conversion from natural or farmland to developed lands, to better focus conservation efforts.
+LandTrust-3, project collaborated with LandTrust of Tennessee, used data science, machine learning, and deep learning tools identify potential land cover type conversion from natural or farmland to developed lands in Tennessee Area. This project leveraged technologies of ArcGIS, rasterio, and Convolutional Neural Network to to deliver a solution of predicting land cover type for next 3-year period. 
 
 ## Project Goal
 
