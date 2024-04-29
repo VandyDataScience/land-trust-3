@@ -1,11 +1,11 @@
 # land-trust-3
 ## Introduction
 
-LandTrust-3, project collaborated with LandTrust of Tennessee, used data science, machine learning, and deep learning tools identify potential land cover type conversion from natural or farmland to developed lands in Tennessee Area. This project leveraged technologies of ArcGIS, rasterio, and Convolutional Neural Network to to deliver a solution of predicting land cover type for next 3-year period. 
+The LandTrust-3 project, in collaboration with the Land Trust of Tennessee, employed data science, machine learning, and deep learning tools to identify potential land cover type conversions from natural or farmland to developed lands in the Tennessee area. Utilizing technologies such as ArcGIS, rasterio, and Convolutional Neural Networks (CNN), this initiative provided a predictive solution for land cover types over the next three years.
 
 ## Project Goal
 
-Provide a geospatial raster dataset depicting future land cover change likelihoods in future years within the targeted region.
+Our goal is to provide a geospatial raster dataset that depicts the likelihood of future land cover changes in the targeted region for upcoming years. We offer two key deliverables: 1) a map displaying the predicted land cover type for the next year, and 2) a trained convolutional LSTM model designed to predict land cover types.
 
 ## Data 
 Our data are from the National Land Cover Dataset(nlcd) and preprocessed by LandTrust for Tennessee to focus on only areas of interest in Tennessee border.
