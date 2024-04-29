@@ -9,6 +9,8 @@ Our goal is to provide a geospatial raster dataset that depicts the likelihood o
 
 ## Data 
 Our data are from the National Land Cover Dataset(nlcd) and preprocessed by LandTrust for Tennessee to focus on only areas of interest in Tennessee border.
+The raw data can be accessed by: https://www.mrlc.gov/data/nlcd-land-cover-conus-all-years
+
 
 ## Getting started
 
@@ -24,6 +26,12 @@ git clone https://github.com/VandyDataScience/land-trust-3.git
 ```bash
 cd land-trust-3
 ```
+And install all the packages required for running the model.
+
+```bash
+pip install -r requirements.txt
+```
+
 
 3. Open `index.html` in your browser by double click.
 4. The map will take a few seconds to be loaded. You will see the map displayed with the land cover type colored.
@@ -46,6 +54,17 @@ The training process involves feeding sequences of these processed patches to th
 
 ## Result
 
+Below is our training and validation accuracy.
 <img width="765" alt="Screen Shot 2024-04-25 at 9 51 24 PM" src="https://github.com/VandyDataScience/land-trust-3/assets/100242191/d5425624-86e5-476b-9b0b-4cf53ab6699e">
+
+## Deliverables
+
+Predictions are made by loading the previously trained ConvLSTM model. The process involves setting specific parameters for generating a comprehensive prediction map. This is executed by applying the model to numerous consecutive 64x64 patches, representing different years, initially without overlap. 
+
+Subsequently, a more refined map is created with overlapping patches to ensure continuity and coverage across the temporal dimension. At each pixel, probability distributions from all overlapping patches are aggregated before applying the argmax function to determine the most likely land type.
+
+Our deliverable and model can be accessed here: https://drive.google.com/drive/folders/1Q_zIvb008uqmCi5pRIKXW0TJzNPzSuAa
+
+
 
 
